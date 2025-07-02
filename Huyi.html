@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的个人主页</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+      color: #333;
+    }
+
+    header {
+      background-color: #2f80ed;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1c4e80;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: #2f80ed;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project h3 {
+      margin-bottom: 5px;
+      font-size: 1.2em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #1c4e80;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>你好，我是李晓明</h1>
+    <p>前端开发者 | 数据分析爱好者 | 生活记录者</p>
+  </header>
+
+  <nav>
+    <a href="#about">关于我</a>
+    <a href="#skills">技能</a>
+    <a href="#projects">项目</a>
+    <a href="#contact">联系</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>关于我</h2>
+      <p>我是一名前端工程师，对创造优雅的用户界面和数据驱动的可视化充满热情。喜欢编程、阅读与摄影，希望通过技术连接世界。</p>
+    </section>
+
+    <section id="skills">
+      <h2>技能</h2>
+      <ul>
+        <li>HTML5 / CSS3 / JavaScript / TypeScript</li>
+        <li>Vue / React / Tailwind CSS</li>
+        <li>Python 数据分析（Pandas、Matplotlib）</li>
+        <li>Git / GitHub / REST API</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>项目</h2>
+      <div class="project">
+        <h3>个人博客系统</h3>
+        <p>基于 VuePress 构建的个人博客，支持 Markdown 撰写，部署在 GitHub Pages。</p>
+      </div>
+      <div class="project">
+        <h3>环境数据可视化平台</h3>
+        <p>使用 Echarts 和 Python 构建的数据可视化界面，展示城市空气质量与变化趋势。</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>联系我</h2>
+      <p>📮 邮箱：lixiaoming@example.com</p>
+      <p>🌐 GitHub：<a href="https://github.com/lixiaoming" target="_blank">github.com/lixiaoming</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 李晓明 | Powered by GitHub Pages
+  </footer>
+
+</body>
+</html>
